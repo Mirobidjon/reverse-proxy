@@ -1,0 +1,14 @@
+port: 8080
+proxy:
+- path: /apiv
+  proxy_pass: https://docs.gofiber.io/api/middleware/proxy
+- path: /api2
+  proxy_pass: https://zetcode.com/golang/fiber/
+- path: /cfg/style.css
+  proxy_pass: https://zetcode.com/cfg/style.css
+- path: /favicon.ico
+  proxy_pass: https://zetcode.com/favicon.ico
+- path: /terraform
+  proxy_pass: https://ifconfig.me
+- path: /styles/style.css
+  proxy_pass: https://ifconfig.me/styles/style.css
