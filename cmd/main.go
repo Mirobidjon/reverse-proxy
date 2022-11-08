@@ -15,7 +15,7 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-var configFile = flag.String("config", "config.yaml", "path to the config file")
+var configFile = flag.String("config", "/etc/reverse-proxy/proxy.yaml", "path to the config file")
 
 type cfg struct {
 	Path      string `yaml:"path"`

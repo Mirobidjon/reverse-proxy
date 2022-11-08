@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  reverse-proxy:
+    image: us.gcr.io/learn-cloud-0809/reverse-proxy:latest
+    container_name: reverse-proxy
+    restart: always
+    ports:
+      - 8080:8080
+    volumes:
+      - ./proxy.yaml:/etc/reverse-proxy/proxy.yaml
+    command: --config=/etc/reverse-proxy/proxy.yaml

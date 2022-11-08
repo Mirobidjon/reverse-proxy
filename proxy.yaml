@@ -1,8 +1,8 @@
 port: 8080
 proxy:
-- path: /apiv
+- path: /middleware
   proxy_pass: https://docs.gofiber.io/api/middleware/proxy
-- path: /api2
+- path: /proxy
   proxy_pass: https://zetcode.com/golang/fiber/
 - path: /cfg/style.css
   proxy_pass: https://zetcode.com/cfg/style.css
